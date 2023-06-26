@@ -12,13 +12,16 @@ export const SplitScreen =({
     left:Left,right:Right,
     leftWeight=1,rightWeight=1
 })=>{
+    const [left,right] = children
     return (
       <Container>
         <Pane weight={leftWeight}>
-          <Left />
+         {/*  <Left /> */}
+         {left}
         </Pane>
         <Pane weight={rightWeight}>
-          <Right />
+          {/* <Right /> */}
+          {right}
         </Pane>
       </Container>
     );
